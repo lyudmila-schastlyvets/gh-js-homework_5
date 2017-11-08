@@ -74,27 +74,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 13, ../sass/main.scss */
+.todo-form {
+  margin-bottom: 20px;
+}
+
+/* line 17, ../sass/main.scss */
 .collection {
+  margin-bottom: 0;
   border: none;
 }
-/* line 16, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 .collection .collection-item {
   margin-bottom: 20px;
   border: 1px solid #dadada;
 }
-/* line 20, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 .collection .collection-item:last-child {
   border: 1px solid #dadada;
 }
-/* line 25, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .collection input {
   width: auto;
 }
-/* line 29, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 .collection .material-icons {
   color: #26a69a;
 }
-/* line 31, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .collection .material-icons:hover {
   cursor: pointer;
 }

@@ -32,6 +32,7 @@ function updateElement (event) {
         parentElement.remove();
     }
     if (event.target.className == 'material-icons small done') {
-        console.dir(parentElement.children[2].setAttribute('style', 'text-decoration: line-through'));
+        parentElement.children[2].setAttribute('style', 'text-decoration: line-through');
+        parentElement.children[2].setAttribute('disabled', '');
     }
 }
