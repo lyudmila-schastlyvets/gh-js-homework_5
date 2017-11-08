@@ -10,6 +10,11 @@
   padding: 15px;
 }
 
+.main-title {
+  color: #009688;
+  font-size: 2rem;
+}
+
 .todo-form {
   margin-bottom: 20px;
 }
@@ -19,6 +24,7 @@
   border: none;
 
   .collection-item {
+    display: flex;
     margin-bottom: 20px;
     border: 1px solid #dadada;
 
@@ -28,13 +34,19 @@
   }
 
   input {
-    width: auto;
+    width: calc(100% - 70px) !important;
   }
 
   .material-icons {
     color: #26a69a;
+    line-height: 3rem;
+
     &:hover {
       cursor: pointer;
+    }
+
+    &.done {
+      margin-right: 5px;
     }
   }
 }

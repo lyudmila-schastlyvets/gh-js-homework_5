@@ -74,33 +74,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 13, ../sass/main.scss */
+.main-title {
+  color: #009688;
+  font-size: 2rem;
+}
+
+/* line 18, ../sass/main.scss */
 .todo-form {
   margin-bottom: 20px;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 22, ../sass/main.scss */
 .collection {
   margin-bottom: 0;
   border: none;
 }
-/* line 21, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .collection .collection-item {
+  display: flex;
   margin-bottom: 20px;
   border: 1px solid #dadada;
 }
-/* line 25, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 .collection .collection-item:last-child {
   border: 1px solid #dadada;
 }
-/* line 30, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .collection input {
-  width: auto;
+  width: calc(100% - 70px) !important;
 }
-/* line 34, ../sass/main.scss */
+/* line 40, ../sass/main.scss */
 .collection .material-icons {
   color: #26a69a;
+  line-height: 3rem;
 }
-/* line 36, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 .collection .material-icons:hover {
   cursor: pointer;
+}
+/* line 48, ../sass/main.scss */
+.collection .material-icons.done {
+  margin-right: 5px;
 }
