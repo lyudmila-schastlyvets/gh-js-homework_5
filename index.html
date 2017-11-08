@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <title>Homework 5</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
-    <form action="#">
-        <input type="text" class="creating-new-task" placeholder="Type here..." id="task-input">
-        <button class="submit-button" id="submit">Submit</button>
-    </form>
-    <ul id="result"></ul>
+    <div class="container">
+        <form action="#">
+            <input type="text" class="creating-new-task" placeholder="Type here..." id="task-input">
+            <button class="submit-button waves-effect waves-light btn" id="submit">Submit</button>
+        </form>
+        <ul id="result" class="collection"></ul>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./materialize/js/materialize.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

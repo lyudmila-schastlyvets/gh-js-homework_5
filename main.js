@@ -7,11 +7,12 @@ function createTask() {
     if (currentValue) {
         var ul = document.getElementById("result");
         var li = document.createElement("li");
-        li.innerHTML = '<span class="close">Close </span>';
+        li.innerHTML = '<i class="material-icons small close">cancel</i><i class="material-icons small done">offline_pin</i>';
         var input = document.createElement('input');
-        ul.appendChild(li).setAttribute('class', 'single-task');
+        ul.appendChild(li).setAttribute('class', 'single-task collection-item z-depth-6');
         li.appendChild(input);
         input.setAttribute('value', currentValue);
+        input.setAttribute('type', 'text');
     }
 }
 
@@ -22,12 +23,14 @@ document.getElementById('submit').addEventListener('click', function (event) {
     document.getElementById('task-input').value = '';
 }, false);
 
-document.getElementById('result').addEventListener('click', removeElement, false);
+document.getElementById('result').addEventListener('click', updateElement, false);
 
-function removeElement (event) {
-    console.dir(event.target);
+function updateElement (event) {
     var parentElement = event.target.parentElement;
-    if (event.target.className == 'close') {
+    if (event.target.className == 'material-icons small close') {
         parentElement.remove();
+    }
+    if (event.target.className == 'material-icons small done') {
+        console.dir(parentElement.children[2].setAttribute('style', 'text-decoration: line-through'));
     }
 }
