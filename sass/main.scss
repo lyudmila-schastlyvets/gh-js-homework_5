@@ -5,8 +5,31 @@
 
 @import "compass/reset";
 
+.container {
+  margin-top: 15px;
+  padding: 15px;
+}
+
 .collection {
+  border: none;
+
+  .collection-item {
+    margin-bottom: 20px;
+    border: 1px solid #dadada;
+
+    &:last-child {
+      border: 1px solid #dadada;
+    }
+  }
+
   input {
     width: auto;
+  }
+
+  .material-icons {
+    color: #26a69a;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

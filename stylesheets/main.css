@@ -67,7 +67,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 9, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
+.container {
+  margin-top: 15px;
+  padding: 15px;
+}
+
+/* line 13, ../sass/main.scss */
+.collection {
+  border: none;
+}
+/* line 16, ../sass/main.scss */
+.collection .collection-item {
+  margin-bottom: 20px;
+  border: 1px solid #dadada;
+}
+/* line 20, ../sass/main.scss */
+.collection .collection-item:last-child {
+  border: 1px solid #dadada;
+}
+/* line 25, ../sass/main.scss */
 .collection input {
   width: auto;
+}
+/* line 29, ../sass/main.scss */
+.collection .material-icons {
+  color: #26a69a;
+}
+/* line 31, ../sass/main.scss */
+.collection .material-icons:hover {
+  cursor: pointer;
 }

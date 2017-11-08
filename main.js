@@ -9,7 +9,8 @@ function createTask() {
         var li = document.createElement("li");
         li.innerHTML = '<i class="material-icons small close">cancel</i><i class="material-icons small done">offline_pin</i>';
         var input = document.createElement('input');
-        ul.appendChild(li).setAttribute('class', 'single-task collection-item z-depth-6');
+        ul.appendChild(li);
+        li.setAttribute('class', 'single-task collection-item z-depth-2');
         li.appendChild(input);
         input.setAttribute('value', currentValue);
         input.setAttribute('type', 'text');
