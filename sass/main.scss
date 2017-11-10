@@ -17,6 +17,12 @@
 
 .todo-form {
   margin-bottom: 20px;
+  @media (min-width: 768px) {
+    display: flex;
+    button {
+      margin: 5px;
+    }
+  }
 }
 
 .collection {
@@ -49,4 +55,24 @@
       margin-right: 5px;
     }
   }
+}
+
+.filters-group {
+  display: flex;
+
+  .active button {
+    border: 1px solid #fff;
+  }
+
+  li {
+    padding: 5px 14px;
+  }
+}
+
+.task-done input {
+  text-decoration: line-through;
+}
+
+.collection .hidden {
+  display: none;
 }

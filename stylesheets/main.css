@@ -83,36 +83,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .todo-form {
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  /* line 18, ../sass/main.scss */
+  .todo-form {
+    display: flex;
+  }
+  /* line 22, ../sass/main.scss */
+  .todo-form button {
+    margin: 5px;
+  }
+}
 
-/* line 22, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .collection {
   margin-bottom: 0;
   border: none;
 }
-/* line 26, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .collection .collection-item {
   display: flex;
   margin-bottom: 20px;
   border: 1px solid #dadada;
 }
-/* line 31, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 .collection .collection-item:last-child {
   border: 1px solid #dadada;
 }
-/* line 36, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .collection input {
   width: calc(100% - 70px) !important;
 }
-/* line 40, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .collection .material-icons {
   color: #26a69a;
   line-height: 3rem;
 }
-/* line 44, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .collection .material-icons:hover {
   cursor: pointer;
 }
-/* line 48, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .collection .material-icons.done {
   margin-right: 5px;
+}
+
+/* line 60, ../sass/main.scss */
+.filters-group {
+  display: flex;
+}
+/* line 63, ../sass/main.scss */
+.filters-group .active button {
+  border: 1px solid #fff;
+}
+/* line 67, ../sass/main.scss */
+.filters-group li {
+  padding: 5px 14px;
+}
+
+/* line 72, ../sass/main.scss */
+.task-done input {
+  text-decoration: line-through;
+}
+
+/* line 76, ../sass/main.scss */
+.collection .hidden {
+  display: none;
 }

@@ -15,7 +15,12 @@
             <input type="text" class="creating-new-task" placeholder="Type here..." id="task-input">
             <button class="submit-button waves-effect waves-light btn" id="submit">Submit</button>
         </form>
-        <ul id="result" class="collection "></ul>
+        <ul id="filters-group" class="filters-group row">
+            <li class="active"><button id="all-items" class="waves-effect waves-light btn">All</button></li>
+            <li><button id="open-items" class="waves-effect waves-light btn">Open</button></li>
+            <li><button id="done-items" class="waves-effect waves-light btn">Done</button></li>
+        </ul>
+        <ul id="result" class="collection"></ul>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./materialize/js/materialize.min.js"></script>
