@@ -81,4 +81,7 @@ function dataLocalStorage () {
 
 document.addEventListener('DOMContentLoaded', function(){
     document.getElementById('result').innerHTML = JSON.parse(localStorage.getItem('result-list'));
+    Array.prototype.map.call(document.getElementsByClassName('hidden'), function (el) {
+        el.classList.remove('hidden');
+    });
 }, false);
