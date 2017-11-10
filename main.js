@@ -17,6 +17,7 @@ function createTask() {
         if (activeFilter == 'done-items') {
             li.classList.add('hidden');
         }
+        dataLocalStorage();
     } else {
         alert('Please insert task into the field!');
     }
@@ -40,6 +41,7 @@ function updateElement (event) {
         parentElement.setAttribute('data-name', 'task-done');
         parentElement.children[2].setAttribute('disabled', '');
     }
+    dataLocalStorage();
 }
 
 document.getElementById('filters-group').addEventListener('click', function (event) {
@@ -71,4 +73,12 @@ document.getElementById('filters-group').addEventListener('click', function (eve
             });
             break;
     }
+}, false);
+
+function dataLocalStorage () {
+    localStorage.setItem('result-list', JSON.stringify(document.getElementById('result').innerHTML));
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('result').innerHTML = JSON.parse(localStorage.getItem('result-list'));
 }, false);
