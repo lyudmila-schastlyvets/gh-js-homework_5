@@ -59,6 +59,8 @@
 
 .filters-group {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   .active button {
     border: 1px solid #fff;

@@ -130,22 +130,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 60, ../sass/main.scss */
 .filters-group {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-/* line 63, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .filters-group .active button {
   border: 1px solid #fff;
 }
-/* line 67, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .filters-group li {
   padding: 5px 14px;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .task-done input {
   text-decoration: line-through;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .collection .hidden {
   display: none;
 }
