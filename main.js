@@ -3,6 +3,7 @@ function createTask() {
     var currentValue = taskInput.value;
 
     if (currentValue) {
+        var activeFilter = document.getElementsByClassName('active')[0].children[0].id;
         var ul = document.getElementById("result");
         var li = document.createElement("li");
         var input = document.createElement('input');
@@ -13,6 +14,9 @@ function createTask() {
         li.appendChild(input);
         input.setAttribute('type', 'text');
         input.setAttribute('value', currentValue);
+        if (activeFilter == 'done-items') {
+            li.classList.add('hidden');
+        }
     } else {
         alert('Please insert task into the field!');
     }
